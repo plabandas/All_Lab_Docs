@@ -1,0 +1,11 @@
+vs Code =>> code . + Enter
+middleware works before controller
+
+
+=>> Terminal in vs code in weather app
+
+conposer install + Enter
+cp .env.example .env
+Generate App Key =>> php artisan key:generate
+
+Give Api key to .env file

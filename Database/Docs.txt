@@ -1,0 +1,81 @@
+**Oracle SQL**
+
+1. CREATE TABLE your_table_name ( column1 datatype1, column2 datatype2, column3 datatype3, -- Add more columns as needed);
+1. create table pk (name varchar(20),roll int, cgpa number(3,2));
+
+2. INSERT INTO your_table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);
+2. insert into pk(name,roll,cgpa) values('Plaban',111,3.88);
+
+3. ALTER TABLE your_table_name RENAME COLUMN old_column_name TO new_column_name;
+3. ALTER TABLE pk RENAME COLUMN name TO stu_name;
+
+4. ALTER TABLE your_table_name MODIFY your_column_name CHAR(your_new_length);
+4. ALTER TABLE pk MODIFY stu_name CHAR(20);
+
+5. ALTER TABLE your_table_name ADD new_column_name data_type;
+5. ALTER TABLE pk ADD dept_name varchar(20);
+
+6. ALTER TABLE your_table_name DROP COLUMN column_to_remove;
+6. ALTER TABLE pk DROP COLUMN dept_name;
+
+7. SET LINESIZE 100;
+
+
+
+//Example in One Place
+
+1. create table pk (name varchar(20),roll int, cgpa number(3,2));
+2. insert into pk(name,roll,cgpa) values('Plaban',111,3.88);
+3. ALTER TABLE pk RENAME COLUMN name TO stu_name;
+4. ALTER TABLE pk MODIFY stu_name CHAR(20);
+5. ALTER TABLE pk ADD dept_name varchar(20);
+6. ALTER TABLE pk DROP COLUMN dept_name;
+7. SET LINESIZE 100;
+
+
+
+
+Installation :: 
+Direct Install -> Password (UserName = SYSTEM) -> Done..
+
+connect system;
+->>> Password dita hoba... Password daka jabe na..............Hit Enter;
+
+Pass Change : 
+connect / as sysdba
+alter user system identified by 1234;
+
+Database Disconnect :
+disconnect --->> Hit Enter
+
+By Default Table Create Kora Thake segula dekar jonno:
+select table_name from user_tables;
+
+
+User Creation :
+create user ss4 identified by 1234;   -> Hit Enter
+
+
+Power Give: -> Only Login Permission is given
+grant create session to ss4;
+
+Power Give: -> Daka jascca ami olpo kisu permission dita cai the ekta role create korta pari
+
+1. create role head;  
+ekhon daka jascca head name ekta role age thake ase then drop korta hoba::->>
+2. drop role head;
+3. create role head;
+4. grant create session, create table to head;
+5. grant head to ss4;
+
+
+
+
+
+
+
+
+
+
+
+

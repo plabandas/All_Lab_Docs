@@ -1,0 +1,16 @@
+PHP Xampp Server Error:
+
+
+1. Change Like Sir PDF
+
+2. Next Line 85 is the Apache server Port Number
+http://localhost:85/phpmyadmin/
+
+//Inside  C:\xampp\phpMyAdmin\config.inc  -> Change Happen
+
+/* Bind to the localhost ipv4 address and tcp */
+$cfg['Servers'][$i]['host'] = '127.0.0.1:3307';   //3307 is the Sql server Post Number
+$cfg['Servers'][$i]['connect_type'] = 'tcp';
+
+//Not Needed
+$cfg['Servers'][$i]['port'] = '3307';

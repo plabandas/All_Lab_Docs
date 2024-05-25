@@ -1,0 +1,22 @@
+Steps:
+
+1. Search In Google For : Free Trial of Toad for Oracle Developer Edition
+2. Or Go To -> https://www.quest.com/register/54618/
+3. Click On -> Download Free Trial -> Give Business Email
+        Like : das2007111@stud.kuet.ac.bd ; das2007111+CSE2@stud.kuet.ac.bd ; 
+               das2007111+CSE3@stud.kuet.ac.bd ; das2007111+CSE4@stud.kuet.ac.bd
+4. Check Mail For : Trial License Key     And     Site Message
+5. Install Toad and put the information to the Add License Section
+
+
+NOW :
+        1. Open Toad Software
+        2. Give UserName And Password
+               - You create user from -> Run SQL Command Line 
+               - Connect system -> Create User -> Give Previleges -> Dis
+               - Disconnect system -> Then Connect Created_User (Optional)
+               - Then Go To Toad
+        3. SELECT -> XE -> from The Database Section
+        4. Then press Connect
+
+                                       Done !!
